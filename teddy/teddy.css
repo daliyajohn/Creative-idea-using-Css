@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  margin: 0px;
+}
+main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+.main-container {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  background: red;
+  flex-direction: column;
+  position: relative;
+}
+.ear {
+  display: flex;
+}
+.ear1,
+.ear2 {
+  height: 90px;
+  width: 100px;
+  background: yellow;
+  border-radius: 100%;
+}
+.ear2 {
+}
+.face {
+  height: 200px;
+  width: 100%;
+  background: green;
+  border-radius: 100%;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  right: 0;
+  border: 0;
+}
