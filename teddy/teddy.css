@@ -7,12 +7,15 @@ main {
   justify-content: center;
   display: flex;
   height: 100%;
+  /* background: rgba(0, 188, 212, 0.16862745098039217); */
+  background: url('../images/nature.jpg') no-repeat;
+  background-size: cover;
 }
 .main-container {
   width: 200px;
   height: 300px;
   display: flex;
-  background: red;
+  /* background: red; */
   flex-direction: column;
   position: relative;
 }
@@ -21,21 +24,64 @@ main {
 }
 .ear1,
 .ear2 {
-  height: 90px;
+  height: 100px;
   width: 100px;
-  background: yellow;
+  background: #916953;
   border-radius: 100%;
+  position: relative;
+  top: 9px;
 }
 .ear2 {
 }
 .face {
-  height: 200px;
+  height: 185px;
   width: 100%;
-  background: green;
+  background: #916953;
   border-radius: 100%;
   position: absolute;
   top: 26px;
   left: 0;
   right: 0;
   border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.eyes {
+  display: flex;
+  margin-top: 50px;
+}
+.inner-ear {
+  width: 64px;
+  height: 64px;
+  background: #f5d1f1;
+  border-radius: 100%;
+  left: 16px;
+  position: absolute;
+  top: 15px;
+}
+.eye1,
+.eye2 {
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 100%;
+}
+.eye2 {
+  margin-left: 46px;
+}
+.nose {
+  width: 40px;
+  height: 34px;
+  background: white;
+  border-radius: 100%;
+  margin-top: 15px;
+}
+.mouth {
+  width: 19px;
+  height: 13px;
+  background: #252323;
+  border-radius: 100%;
+  margin: 4px 0px 1px 10px;
 }
