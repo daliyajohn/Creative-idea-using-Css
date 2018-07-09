@@ -17,13 +17,10 @@ main {
   height: 458px;
   display: flex;
   justify-content: center;
-  border: #2e1a12 solid 8px;
-  border-image: url('http://pancaketheorem.com/stuff/demos/borderimage/wood.png') 200 stretch;
 }
 
 .main-container {
   width: 200px;
-  height: 300px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -100,4 +97,46 @@ main {
   background: #252323;
   border-radius: 100%;
   margin: 4px 0px 1px 10px;
+}
+
+.teddy-body {
+  height: 211px;
+  width: 85%;
+  background: #916953;
+  border-radius: 30%;
+  margin-top: 84px;
+  border-top: 8px solid #695d5da8;
+}
+
+.teddy-inner-body {
+  height: 159px;
+  width: 72%;
+  background: #f5d1f2;
+  border-radius: 35%;
+  margin-top: 22px;
+  margin-left: 23px;
+}
+
+.leg1 {
+  height: 59px;
+  width: 48px;
+  background: #916953;
+  border-radius: 0% 0% 31% 32%;
+  position: absolute;
+  border-bottom: 11px solid #f5d1f2;
+  bottom: 45px;
+  left: 0px;
+  transform: rotate(34deg);
+}
+
+.leg2 {
+  height: 59px;
+  width: 48px;
+  background: #916953;
+  border-radius: 0% 0% 31% 32%;
+  position: absolute;
+  border-bottom: 11px solid #f5d1f2;
+  bottom: 45px;
+  right: 27px;
+  transform: rotate(-32deg);
 }
