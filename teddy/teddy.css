@@ -105,16 +105,18 @@ main {
   background: #916953;
   border-radius: 30%;
   margin-top: 84px;
-  border-top: 8px solid #695d5da8;
+  border-top: 8px solid #988a8a87;
+  box-shadow: 0px 3px 5px 6px #5d52524d;
 }
 
 .teddy-inner-body {
-  height: 159px;
-  width: 72%;
+  height: 155px;
+  width: 68%;
   background: #f5d1f2;
   border-radius: 35%;
   margin-top: 22px;
-  margin-left: 23px;
+  margin-left: 28px;
+  box-shadow: 0px 3px 5px 6px #5d52524d;
 }
 
 .leg1 {
@@ -139,4 +141,31 @@ main {
   bottom: 45px;
   right: 27px;
   transform: rotate(-32deg);
+}
+
+.hand1 {
+  height: 59px;
+  width: 48px;
+  background: #916953;
+  border-radius: 10% 64% 32% 42%;
+  position: absolute;
+  border-bottom: 11px solid #f5d1f2;
+  bottom: 0px;
+  left: -24px;
+  transform: rotate(54deg);
+  top: 187px;
+}
+
+.hand2 {
+  height: 59px;
+  width: 48px;
+  background: #916953;
+  border-radius: 61% 20% 37% 34%;
+  border-radius: 63% 0% 34% 37%;
+  position: absolute;
+  border-bottom: 11px solid #f5d1f2;
+  bottom: 0px;
+  right: 4px;
+  transform: rotate(-58deg);
+  top: 189px;
 }
