@@ -6,6 +6,8 @@ body {
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
+  position: relative;
+      z-index: 111;
 }
 .menu-icon {
   width: 100%;
@@ -22,10 +24,31 @@ body {
   font-size: 25px;
   box-sizing: border-box;
   display: block!important;
-  transition: all 0.5s ease-in-out;
+      height: 355px;
+
+
+}
+@-webkit-keyframes example {
+    from {top: 0px;}
+    to {top: 200px; background-color: blue;}
+}
+
+@keyframes example {
+    from {top: 0px;}
+    to {
+      top: 70px; 
+    }
 }
 #menu-container {
   display: none;
+    position: relative;
+  animation-name: example;
+    animation-duration: 1s;    
+    animation-fill-mode: forwards;
+}
+.menu-main{
+      height: 355px;
+    margin-top: -158px;
 }
 
 .navigation-checkbox {
