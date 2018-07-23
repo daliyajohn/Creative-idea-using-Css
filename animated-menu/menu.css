@@ -7,48 +7,53 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
   position: relative;
-      z-index: 111;
+  z-index: 111;
 }
 .menu-icon {
   width: 100%;
   padding: 16px 16px 10px 16px;
-} 
+}
 .banner img {
   width: 100%;
 }
 .toggle-menu {
   width: 100%;
   padding: 25px;
-  background-color: coral;
+  background-color: #b5461d;
   color: white;
   font-size: 25px;
   box-sizing: border-box;
-  display: block!important;
-      height: 355px;
-
-
+  display: block !important;
+  height: 235px;
 }
 @-webkit-keyframes example {
-    from {top: 0px;}
-    to {top: 200px; background-color: blue;}
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+    background-color: blue;
+  }
 }
 
 @keyframes example {
-    from {top: 0px;}
-    to {
-      top: 70px; 
-    }
+  from {
+    top: 0px;
+  }
+  to {
+    top: 70px;
+  }
 }
 #menu-container {
   display: none;
-    position: relative;
+  position: relative;
   animation-name: example;
-    animation-duration: 1s;    
-    animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
-.menu-main{
-      height: 355px;
-    margin-top: -158px;
+.menu-main {
+  height: 355px;
+  margin-top: -158px;
 }
 
 .navigation-checkbox {
@@ -70,7 +75,7 @@ body {
 .navigation-toggle-icon:before,
 .navigation-toggle-icon:after {
   border-top: 3px solid #000000db;
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -93,17 +98,46 @@ body {
   transition-delay: 0s;
   transform-origin: center;
 }
-.navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:before,
-.navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:after {
+.navigation-checkbox:checked
+  + .navigation-toggle
+  .navigation-toggle-icon:before,
+.navigation-checkbox:checked
+  + .navigation-toggle
+  .navigation-toggle-icon:after {
   transition-delay: 0.125s;
 }
-.navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:before {
+.navigation-checkbox:checked
+  + .navigation-toggle
+  .navigation-toggle-icon:before {
   transform: translateY(13px) rotate(131deg);
 }
 .navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon {
   border-color: transparent;
 }
-.navigation-checkbox:checked + .navigation-toggle .navigation-toggle-icon:after {
+.navigation-checkbox:checked
+  + .navigation-toggle
+  .navigation-toggle-icon:after {
   transform: translateY(-3px) rotate(-137deg);
 }
 
+/*menu start*/
+.menu-main ul li {
+  float: left;
+}
+#menu-container {
+  justify-content: center;
+}
+.menu-main ul {
+  margin-top: 121px;
+  float: right;
+}
+.menu-main ul li {
+  padding: 0px 11px 0px 11px;
+  list-style: none;
+}
+.menu-main ul li a {
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
