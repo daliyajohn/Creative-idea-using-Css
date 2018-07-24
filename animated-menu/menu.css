@@ -141,3 +141,21 @@ body {
   color: white;
   text-decoration: none;
 }
+.w3-animate-right {
+  position: relative;
+  animation: animateright 0.4s;
+  display: block !important;
+}
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+#banner {
+  display: none;
+}
